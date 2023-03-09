@@ -4,12 +4,10 @@ class Admin::CategoriesController < ApplicationController
     @categories = Category.order(id: :desc).all
   end
 
-
   #gets the html form
   def new
     @category = Category.new
   end
-
 
   #post req to database
   def create
