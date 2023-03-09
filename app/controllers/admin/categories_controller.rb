@@ -10,7 +10,6 @@ class Admin::CategoriesController < ApplicationController
     @category = Category.new
   end
 
-
   #post req to database
   def create
     @category = Category.new(category_params)
