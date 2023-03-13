@@ -1,4 +1,4 @@
-describe('HomePage', () => {
+describe('Add to cart', () => {
   beforeEach(() => {
       cy.visit('http://localhost:3000/')
   })
@@ -7,8 +7,9 @@ describe('HomePage', () => {
       cy.get(".products article").should("be.visible");
     });
 
-    it("should vaigate to product detail page", () => {
+    it("should navigate to product detail page", () => {
       cy.get('[alt="Cliff Collard"]').click();
       cy.get(".product-detail").should("exist");
     });
+
 })
